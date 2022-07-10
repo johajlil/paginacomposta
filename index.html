@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Hau Nguyen">
+    <meta name="keywords" content="au theme template">
+
+    <!-- Title Page-->
+    <title>Información</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="css/font-face.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/theme.css" rel="stylesheet" media="all">
+
+</head>
+
+<body class="animsition">
+    <div class="page-wrapper">
+        <!-- HEADER MOBILE-->
+        <header class="header-mobile d-block d-lg-none">
+            <div class="header-mobile__bar">
+                <div class="container-fluid">
+                    <div class="header-mobile-inner">
+                        <a class="logo" href="" >
+                            <img src="images/icon/logo.png" alt="CoolAdmin" />
+                        </a>
+                        <button class="hamburger hamburger--slider" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar-mobile">
+                <div class="container-fluid">
+                    <ul class="navbar-mobile__list list-unstyled">
+                        <li>
+                            <a href="index.html">
+                                <i class="fas fa-table"></i>Información</a>
+                        </li>
+                        <li>
+                            <a href="configuracion.html">
+                                <i class="far fa-check-square"></i>Configuración</a>
+                        </li>
+                        <li>
+                            <a href="calendar.html">
+                                <i class="fas fa-calendar-alt"></i>Calendario</a>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- END HEADER MOBILE-->
+
+        <!-- MENU SIDEBAR-->
+        <aside class="menu-sidebar d-none d-lg-block">
+            <div class="logo" style="background-color: #26462e;">
+                <a href="#">
+                    <img src="images/icon/logo.png" width="190px" alt="Cool Admin" />
+                </a>
+            </div>
+            <div class="menu-sidebar__content js-scrollbar1">
+                <nav class="navbar-sidebar">
+                    <ul class="list-unstyled navbar__list">
+
+                        <li class="active">
+                            <a href="index.html">
+                                <i class="fas fa-table"></i>Información</a>
+                        </li>
+                        <li>
+                            <a href="configuracion.html">
+                                <i class="far fa-check-square"></i>Configuración</a>
+                        </li>
+                        <li>
+                            <a href="calendar.html">
+                                <i class="fas fa-calendar-alt"></i>Calendario</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <!-- END MENU SIDEBAR-->
+
+        <!-- PAGE CONTAINER-->
+        <div class="page-container">
+
+            <!-- MAIN CONTENT-->
+            <div class="main-content">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!-- DATA TABLE -->
+                                <h3 class="title-5 m-b-35">Estatus</h3>
+                                <div class="table-data__tool">
+                                    <div class="table-data__tool-left">
+                                        <div class="rs-select2--light rs-select2--md">
+                                            <select class="js-select2" name="property">
+                                                <option selected="selected">Acciones</option>
+                                                <option value="">Editar Perfil</option>
+                                                <option value="">Calendario</option>
+                                            </select>
+                                            <div class="dropDownSelect2"></div>
+                                        </div>
+                                        <div class="rs-select2--light rs-select2--sm">
+                                            <select class="js-select2" name="time">
+                                                <option selected="selected">Semanal</option>
+                                                <option value="">Mensual</option>
+                                                <option value="">Anual</option>
+                                            </select>
+                                            <div class="dropDownSelect2"></div>
+                                        </div>
+                                        <button class="au-btn-filter">
+                                            <i class="zmdi zmdi-filter-list"></i>Filtro</button>
+                                    </div>
+                                    <div class="table-data__tool-right">
+                                        <div class="rs-select2--dark rs-select2--sm rs-select2--dark2">
+                                            <select class="js-select2" name="type">
+                                                <option value="">Reporte</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table-responsive table-responsive-data2">
+                                    <table class="table table-data2">
+                                        <thead>
+                                            <tr>
+                                                <th>nombre</th>
+                                                <th>Numero Telefonico</th>
+                                                <th>Descripción</th>
+                                                <th>Dia De Recolección</th>
+                                                <th>status</th>
+                                                <th>Monto</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="tr-shadow">
+                                                <td>Juan Pablo Carrera Ramirez</td>
+                                                <td>
+                                                    <span class="block-email">2384453462</span>
+                                                </td>
+                                                <td class="desc">Cliente Frecuente</td>
+                                                <td>Lunes-Viernes</td>
+                                                <td>
+                                                    <span class="status--process">Procesado</span>
+                                                </td>
+                                                <td>$679.00</td>
+                                            </tr>
+                                           
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="table-responsive table-responsive-data2">
+                                    <table class="table table-data2">
+                                        <thead>
+                                            <tr>
+                                                <th>Colonia</th>
+                                                <th>Usuario</th>
+                                                <th>Numero Int</th>
+                                                <th>Numero Ext</th>
+                                                <th>Calle</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="tr-shadow">
+                                                <td>Francisco Sarabia</td>
+                                                <td>
+                                                    <span class="block-email">043124</span>
+                                                </td>
+                                                <td>#1000</td>
+                                                <td>#13</td>
+                                                <td>
+                                                    <span >Avenida Peñafiel</span>
+                                                </td>
+                    
+                                            </tr>
+                                           
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- END DATA TABLE -->
+                            </div>
+                        </div>
+                        <div class="row m-t-30">
+                            <div class="col-md-12">
+                                <!-- DATA TABLE-->
+                                <div class="table-responsive m-b-40">
+                                    <table class="table table-borderless table-data3">
+                                        <thead>
+                                            <tr>
+                                                <th>Fecha De Recolección</th>
+                                                <th>Fecha De Entrega</th>
+                                                <th>Descripción</th>
+                                                <th>Kg Organicos</th>
+                                                <th>Kg Reciclable</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2018-09-29 </td>
+                                                <td>2018-09-29 </td>
+                                                <td>Regular</td>
+                                                <td >15.4 Kilogramos</td>
+                                                <td>10.4 Kilogramos</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-28 </td>
+                                                <td>2018-09-29 </td>
+                                                <td>Regular</td>
+                                                <td >5.5 Kilogramos</td>
+                                                <td>10.3 Kilogramos</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-27 </td>
+                                                <td>2018-09-29 </td>
+                                                <td>Regular</td>
+                                                <td>4.9 Kilogramos</td>
+                                                <td>4.8 Kilogramos</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-26 </td>
+                                                <td>2018-09-29 </td>
+                                                <td>Regular</td>
+                                                <td >8.6 Kilogramos</td>
+                                                <td>8.3 Kilogramos</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-25 </td>
+                                                <td>2018-09-29 </td>
+                                                <td>Regular</td>
+                                                <td >7.3 Kilogramos</td>
+                                                <td>3.6 Kilogramos</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-29 </td>
+                                                <td>2018-09-29 </td>
+                                                <td>Regular</td>
+                                                <td >8.5 Kilogramos</td>
+                                                <td>8.2 Kilogramos</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-24 </td>
+                                                <td>2018-09-29 </td>
+                                                <td>Regular</td>
+                                                <td >7.3 Kilogramos</td>
+                                                <td>4.8 Kilogramos</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-22 </td>
+                                                <td>2018-09-29 </td>
+                                                <td>Regular</td>
+                                                <td >4.5 Kilogramos</td>
+                                                <td>8.4 Kilogramos </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- END DATA TABLE-->
+                            </div>
+                        </div>
+
+                        <div class="row m-t-30">
+                            <div class="col-md-12">
+                                <!-- DATA TABLE-->
+                                <div class="table-responsive m-b-40">
+                                    <table class="table table-borderless table-data3">
+                                        <thead>
+                                            <tr>
+                                                <th>Fecha De Pago</th>
+                                                <th>Monto</th>
+                                                <th>Descripción</th>
+                                                <th>status</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2018-09-29 </td>
+                                                <td>1000$ </td>
+                                                <td>Todo Pagado</td>
+                                                <td > <span class="status--process">Procesado</span></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-28 </td>
+                                                <td>150$ </td>
+                                                <td>Todo Pagado</td>
+                                                <td > <span class="status--process">Procesado</span></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-27 </td>
+                                                <td>800$ </td>
+                                                <td>Todo Pagado</td>
+                                                <td> <span class="status--process">Procesado</span></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-26 </td>
+                                                <td>200$ </td>
+                                                <td>Todo Pagado</td>
+                                                <td > <span class="status--process">Procesado</span></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-25 </td>
+                                                <td>600$ </td>
+                                                <td>Todo Pagado</td>
+                                                <td > <span class="status--process">Procesado</span></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-29 </td>
+                                                <td>400$ </td>
+                                                <td>Todo Pagado</td>
+                                                <td > <span class="status--process">Procesado</span></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-24 </td>
+                                                <td>700$ </td>
+                                                <td>Todo Pagado</td>
+                                                <td > <span class="status--process">Procesado</span></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-22 </td>
+                                                <td>500$ </td>
+                                                <td>Todo Pagado</td>
+                                                <td > <span class="status--process">Procesado</span></td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- END DATA TABLE-->
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+    <script src="vendor/slick/slick.min.js">
+    </script>
+    <script src="vendor/wow/wow.min.js"></script>
+    <script src="vendor/animsition/animsition.min.js"></script>
+    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    </script>
+    <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="vendor/counter-up/jquery.counterup.min.js">
+    </script>
+    <script src="vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="vendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="vendor/select2/select2.min.js">
+    </script>
+
+    <!-- Main JS-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
+<!-- end document-->

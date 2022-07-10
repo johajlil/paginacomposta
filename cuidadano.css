@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'roboto',sans-serif;
+    margin: 0;
+}
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+.color-acento{color: #26462e;}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+header{
+    background-color: #26462e;
+}
+header .logo{
+    margin: 0;
+    width: 150px;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80px;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #26462e;
+    font-size: 120%;
+}
+header a:hover{
+    color: #002b0b;
+}
+#inicio{
+
+}
+#inicio .container{
+    text-align: center;
+    padding: 200px 12px ; 
+}
+#inicio h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+footer{
+    background-color: #242424;
+}
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100,100);
+}
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+#servicios .container{
+    padding-top: 15px;
+    text-align: center;
+}
+#servicios p{
+    font-size: 1.5em;
+}
+.container-funcion{
+    display: grid;
+    grid-template-areas:'uno dos'
+                        'tres cuatro'
+                        'cinco cinco';
+    font-size: 1.8em;
+    color: #26462e;
+}
+.funcion h3{
+    font-size: 1em;
+}
+.funcion{
+    margin: 25px;
+    text-align: center;
+    border: 3px solid #242424;
+    border-style: dashed;
+}
+.uno{
+    grid-area: uno;
+}
+.dos{
+    grid-area: dos;
+}
+.tres{
+    grid-area: tres;
+}
+.cuatro{
+    grid-area: cuatro;
+}
+.cinco{
+    grid-area: cinco;
+}
+
+#beneficios .container{
+    text-align: center;
+}
+.img-beneficios{
+    width: 550px;
+}
+
+#galeria .container{
+    grid-template-columns: auto auto;
+    text-align: center;
+}
+.galeria-img{
+    width: 250px;
+    margin: 10px;
+}
+
+
+@media (min-width:720px) {
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header  a{
+        color: white;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0 ;
+        padding-right: 20px;
+        color: white;
+    }
+    #inicio .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #inicio .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }   
+    #inicio h2{
+        margin-top: 0px;
+    }
+    #inicio .img-container{
+        background-image: url("media/imagen4.jfif");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+    footer .container{
+        height: 69px;
+        justify-content: flex-end;
+    }
+
+
+}
